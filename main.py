@@ -28,3 +28,8 @@ Snare_centre = [np.shape(frame)[1]*6//8, np.shape(frame)[0]*6//8]
 Hatt_thickness = [200, 100]
 Hatt_top = [Hatt_centre[0]-Hatt_thickness[0]//2, Hatt_centre[1]-Hatt_thickness[1]//2]
 Hatt_btm = [Hatt_centre[0]+Hatt_thickness[0]//2, Hatt_centre[1]+Hatt_thickness]
+
+Snare_thickness = [200, 100]
+Snare_top = [Snare_centre[0]-Snare_thickness[0]//2, Snare_centre[1]-Snare_thickness[1]//2]
+Snare_btm = [Snare_centre[0]+Snare_thickness[0]//2, Snare_centre[1]+Snare_thickness[1]//2]
+
