@@ -13,3 +13,7 @@ drum_snare = mixer.Sound('button-2.ogg')
 blueLower = (80, 150, 10)
 blueUpper = (120, 255, 255)
 
+camera = cv2.VideoCapture(0)
+ret, frame = camera.read()
+H, W = frame.shape[:2]
+
