@@ -33,3 +33,4 @@ Snare_thickness = [200, 100]
 Snare_top = [Snare_centre[0]-Snare_thickness[0]//2, Snare_centre[1]-Snare_thickness[1]//2]
 Snare_btm = [Snare_centre[0]+Snare_thickness[0]//2, Snare_centre[1]+Snare_thickness[1]//2]
 
+time.sleep(1)
