@@ -13,6 +13,18 @@ def state_machine(sumation,sound):
 	elif yes and sound==2:
 		drum_snare.play()
 		time.sleep(0.001)
+                
+def ROI_analysis(frame,sound):
+	
+	hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+        
+	mask = cv2.inRange(hsv, blueLower, blueUpper)
+	
+	sumation = np.sum(mask)
+	
+	state_machine(sumation,sound)
+	
+	return mask
 
 Verbose = False
 
