@@ -47,4 +47,5 @@ while True:
     snare_ROI = np.copy(frame[Snare_top[1]:Snare_btm[1], Snare_top[0]:Snare_btm[0]])
     mask = ROI_analsis(snare_ROI, 1)
 
-    
+    hatt_ROI = np.copy(frame[frame[Hatt_top[1]:Hatt_btm[1], Hatt_top[0]:Hatt_btm[1]]])
+    mask = ROI_analysis(hatt_ROI, 2)
