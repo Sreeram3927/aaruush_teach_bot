@@ -69,3 +69,7 @@ while True:
     else:
 
         frame[Snare_top[1]:Snare_btm[1], Snare_top[0]:Snare_btm[0]] = cv2.addWeighted(Snare, 1, frame[Snare_top[0]:Snare_btm[1], Snare_top[0]:Snare_btm[0]], 1, 0)
+
+        frame[Hatt_top[1]:Hatt_btm[1], Hatt_top[0]:Hatt_btm[0]] = cv2.addWeighted(Hatt, 1, frame[Hatt_top[0]:Hatt_btm[1], Hatt_top[0]:Hatt_btm[0]], 1, 0)
+
+        
