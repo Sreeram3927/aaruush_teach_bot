@@ -34,3 +34,14 @@ Snare_top = [Snare_centre[0]-Snare_thickness[0]//2, Snare_centre[1]-Snare_thickn
 Snare_btm = [Snare_centre[0]+Snare_thickness[0]//2, Snare_centre[1]+Snare_thickness[1]//2]
 
 time.sleep(1)
+
+
+while True:
+
+    ret, frame = camera.read()
+    frame = cv2.flip(frame, 1)
+
+    if not(ret):
+        break
+
+    
