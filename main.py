@@ -49,3 +49,7 @@ while True:
 
     hatt_ROI = np.copy(frame[frame[Hatt_top[1]:Hatt_btm[1], Hatt_top[0]:Hatt_btm[1]]])
     mask = ROI_analysis(hatt_ROI, 2)
+
+    cv2.putText(frame, 'Project: Air Drums (SD - beta)', (10, 30), 2, 1, (20, 20, 20), 2)
+
+    
