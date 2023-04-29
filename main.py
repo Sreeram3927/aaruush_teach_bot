@@ -3,6 +3,16 @@ import time
 import cv2
 from pygame import mixer
 
+def state_machine(sumation,sound):
+
+	yes = (sumation) > Hatt_thickness[0]*Hatt_thickness[1]*0.8
+
+	if yes and sound==1:
+		drum_clap.play()
+		
+	elif yes and sound==2:
+		drum_snare.play()
+		time.sleep(0.001)
 
 Verbose = False
 
