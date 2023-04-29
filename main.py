@@ -17,3 +17,5 @@ camera = cv2.VideoCapture(0)
 ret, frame = camera.read()
 H, W = frame.shape[:2]
 
+kernal = np.ones((7, 7), np.uint8)
+
