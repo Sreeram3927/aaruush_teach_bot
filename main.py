@@ -24,3 +24,7 @@ Snare = cv2.resize(cv2.imread('./images/Snare.png'), (200, 100), interpolation =
 
 Hatt_centre = [np.shape(frame)[1]*2//8, np.shape(frame)[0]*6//8]
 Snare_centre = [np.shape(frame)[1]*6//8, np.shape(frame)[0]*6//8]
+
+Hatt_thickness = [200, 100]
+Hatt_top = [Hatt_centre[0]-Hatt_thickness[0]//2, Hatt_centre[1]-Hatt_thickness[1]//2]
+Hatt_btm = [Hatt_centre[0]+Hatt_thickness[0]//2, Hatt_centre[1]+Hatt_thickness]
