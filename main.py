@@ -10,3 +10,6 @@ mixer.init()
 drum_clap = mixer.Sound('batterrm.wav')
 drum_snare = mixer.Sound('button-2.ogg')
 
+blueLower = (80, 150, 10)
+blueUpper = (120, 255, 255)
+
