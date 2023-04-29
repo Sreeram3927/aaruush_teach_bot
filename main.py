@@ -19,3 +19,6 @@ H, W = frame.shape[:2]
 
 kernal = np.ones((7, 7), np.uint8)
 
+Hatt = cv2.resize(cv2.imread('./images/Hatt.png'), (200, 100), interpolation = cv2.INTER_CUBIC)
+Snare = cv2.resize(cv2.imread('./images/Snare.png'), (200, 100), interpolation = cv2.INTER_CUBIC)
+
