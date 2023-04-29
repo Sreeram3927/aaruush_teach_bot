@@ -72,4 +72,5 @@ while True:
 
         frame[Hatt_top[1]:Hatt_btm[1], Hatt_top[0]:Hatt_btm[0]] = cv2.addWeighted(Hatt, 1, frame[Hatt_top[0]:Hatt_btm[1], Hatt_top[0]:Hatt_btm[0]], 1, 0)
 
-        
+    cv2.imshow('Output',frame)
+    key	 = cv2.waitKey(1) & 0xFF
