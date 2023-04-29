@@ -44,4 +44,7 @@ while True:
     if not(ret):
         break
 
+    snare_ROI = np.copy(frame[Snare_top[1]:Snare_btm[1], Snare_top[0]:Snare_btm[0]])
+    mask = ROI_analsis(snare_ROI, 1)
+
     
