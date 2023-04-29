@@ -52,4 +52,12 @@ while True:
 
     cv2.putText(frame, 'Project: Air Drums (SD - beta)', (10, 30), 2, 1, (20, 20, 20), 2)
 
-    
+    if Verbose:
+
+        frame[Snare_top[1]:Snare_btm[1], Snare_top[0]:Snare_btm[0]] = cv2.bitwise_and(
+            frame[Snare_top[1]:Snare_btm[1], Snare_top[0], Snare_btm[0]],
+            frame[Snare_top[1]:Snare_btm[1], Snare_top[0], Snare_btm[0]],
+            mask = mask[Snare_top[1]:Snare_btm[1], Snare_top[0]:Snare_btm[0]]
+        )
+
+        
